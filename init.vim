@@ -39,12 +39,15 @@ Plug 'mxw/vim-jsx'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 call plug#end()
 
 "----KEYMAP keymap
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-q> :q<CR>
-nnoremap <C-f> :Telescope find_files<CR>
+nnoremap <C-f> :Files<CR>
 nnoremap <C-n> :tabnew<CR>
 nnoremap <C-w> :-tabnext<CR>
 nnoremap <C-e> :+tabnext<CR>
